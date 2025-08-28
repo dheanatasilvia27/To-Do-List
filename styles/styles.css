@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile h2,
+.profile p {
+  margin: 0;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+select,
+input[type="date"],
+button {
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-all {
+  background: darkred;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.overdue-section h3 {
+  color: darkred;
+}
+
+li.overdue {
+    color: darkred;
+    font-weight: bold;
+}
