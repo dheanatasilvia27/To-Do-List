@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aolikasi To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile">
+          <h2 id="userName">Nama : Dheanata Silvia</h2>
+          <p id="userJob">Jabatan : Administrasi Logistik</p>
+        </div>
+        <div class="time" id="currentTime"></div>
+      </header>
+
+      <section class="input-section">
+        <textarea id="taskInput" placeholder="Tulis tugasmu"></textarea>
+        <select id="priority">
+          <option value="Low">Low Priority</option>
+          <option value="Medium">Medium Priority</option>
+          <option value="High">High Priority</option>
+        </select>
+        <input type="date" id="deadline" />
+        <button id="addTaskBtn">Submit</button>
+      </section>
+
+      <section class="todo-section">
+        <h3>To Do List</h3>
+        <ul id="todoList"></ul>
+        <button id="deleteAllBtn" class="delete-all">Delete All</button>
+      </section>
+
+      <section class="done-section">
+        <h3>Done</h3>
+        <ul id="doneList"></ul>
+      </section>
+
+      <section class="overdue-section">
+        <h3>Overdue / Late</h3>
+        <ul id="overdueList"></ul>
+      </section>
+    </div>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
